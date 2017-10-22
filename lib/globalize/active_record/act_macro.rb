@@ -29,7 +29,7 @@ module Globalize
       def allow_translation_of_attributes(attr_names)
         attr_names.each do |attr_name|
           # Detect and apply serialization.
-          enable_serializable_attribute(attr_name)
+          # enable_serializable_attribute(attr_name)
 
           # Create accessors for the attribute.
           define_translated_attr_accessor(attr_name)
